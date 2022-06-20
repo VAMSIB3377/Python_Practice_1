@@ -29,8 +29,18 @@ record = myCollection.find_one()
 print(record)
 print("\n\n")
 
-print(client.list_database_names())
+#print(client.list_database_names())
 
 # Updating the Record
 
+query = {
+    "T_Marks": 525
+}
+new_val = {"$set": {"T_Marks": 520}}
 
+myDOC1_Update = myCollection.update_one(query, new_val)
+
+
+record = myCollection.find_one()
+print("\n\n", record)
+print("\n\n")
