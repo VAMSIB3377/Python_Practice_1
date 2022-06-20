@@ -44,7 +44,7 @@ for i in records:
 #print(client.list_database_names())
 
 # Updating the Record
-
+"""
 query = {
     "T_Marks": 400
 }
@@ -52,8 +52,8 @@ new_val = {"$set": {"T_Marks": 520}}
 
 myDOC1_Update = myCollection.update_one(query, new_val)
 
-
 """
+
 # Deleting The Record
 
 query_del = {
@@ -63,8 +63,9 @@ query_del = {
 
 record_del = myCollection.delete_one(query_del)
 
+records = myCollection.find()
 
-record = myCollection.find_one()
-print(record)
-print("\n\n")
-"""
+for i in records:
+    print("\n",i)
+
+
