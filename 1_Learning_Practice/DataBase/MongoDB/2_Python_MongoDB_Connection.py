@@ -7,9 +7,10 @@ conn_str = "mongodb+srv://Vamsi_Batta:<12345>@cluster0.x5qyupy.mongodb.net/?retr
 try:
     client = pymongo.MongoClient(conn_str)
 except Exception:
-    print("Error : " +Exception)
+    print("Error : " + Exception)
 
 # step3 = Create a DB
+mydb = client("pymongo_demo")
 
 
-print(client.list_database_names())
+print(client.list_databases())
