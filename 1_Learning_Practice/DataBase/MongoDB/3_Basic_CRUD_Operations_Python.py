@@ -18,29 +18,53 @@ myCollection = myDB["Document"]
 # myDOC3 = {"_id": 3, "Name": "Cde", "T_Marks": 528}
 # myDOC4 = {"_id": 4, "Name": "Def", "T_Marks": 342}
 
+# Insert Many
+"""myDOC = [{"_id": 1, "Name": "Abc", "T_Marks": 567},\
+        {"_id": 2, "Name": "Bcd", "T_Marks": 400},
+        {"_id": 3, "Name": "Cde", "T_Marks": 528},
+        {"_id": 4, "Name": "Def", "T_Marks": 342}]
 
+myCollection.insert_many(myDOC)
+"""
 # myCollection.insert_one(myDOC1)
 # myCollection.insert_one(myDOC2)
 # myCollection.insert_one(myDOC3)
 # myCollection.insert_one(myDOC4)
 
 # Reading the Document
-record = myCollection.find_one()
-print(record)
-print("\n\n")
+
+"""records = myCollection.find({})
+for i in records:
+    print(i)
+    print("\n")"""
+
+
+
 
 #print(client.list_database_names())
 
 # Updating the Record
 
 query = {
-    "T_Marks": 525
+    "T_Marks": 400
 }
 new_val = {"$set": {"T_Marks": 520}}
 
 myDOC1_Update = myCollection.update_one(query, new_val)
 
 
+"""
+# Deleting The Record
+
+query_del = {
+    "_id": 4
+
+}
+
+record_del = myCollection.delete_one(query_del)
+
+
 record = myCollection.find_one()
-print("\n\n", record)
+print(record)
 print("\n\n")
+"""
