@@ -1,4 +1,3 @@
-from numpy import array
 
 
 def quick_sort(arr, left, right):
