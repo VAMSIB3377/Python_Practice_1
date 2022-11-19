@@ -19,10 +19,10 @@ for i in range(1, len(arr)):
 
 # Assignments
 
-# 1. Ceate an array With 5 Values and delete
+# 1. Create an array With 5 Values and delete
 #    the value at index number 2 without using inbuilt funtion
 
-arr1 = array('i', [7, 8, 4, 6, 9])
+arr1 = array('i', [7, 8, 4, 7, 5, 4, 6, 9])
 ind = int(input("Enter the index Number of The Number That You Want to Delete : "))
 """
 c = [ e for i,e in enumerate(arr1) if i != ind ]

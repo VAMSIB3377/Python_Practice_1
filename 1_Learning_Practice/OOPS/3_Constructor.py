@@ -14,12 +14,8 @@ class Computer:
             return False
 
 
-
-
 c1 = Computer()
 c2 = Computer()
-
-
 
 c1.age = 22
 c1.name = "abc"

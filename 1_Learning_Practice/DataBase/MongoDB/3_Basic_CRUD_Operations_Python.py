@@ -19,7 +19,7 @@ myCollection = myDB["Document"]
 # myDOC4 = {"_id": 4, "Name": "Def", "T_Marks": 342}
 
 # Insert Many
-"""myDOC = [{"_id": 1, "Name": "Abc", "T_Marks": 567},\
+"""myDOC = [{"_id": 1, "Name": "Abc", "T_Marks": 567},
         {"_id": 2, "Name": "Bcd", "T_Marks": 400},
         {"_id": 3, "Name": "Cde", "T_Marks": 528},
         {"_id": 4, "Name": "Def", "T_Marks": 342}]
@@ -66,6 +66,6 @@ record_del = myCollection.delete_one(query_del)
 records = myCollection.find()
 
 for i in records:
-    print("\n",i)
+    print("\n", i)
 
 
