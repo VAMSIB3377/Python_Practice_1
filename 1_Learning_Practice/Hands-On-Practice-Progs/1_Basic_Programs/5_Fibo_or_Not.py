@@ -1,4 +1,4 @@
-def Fibo_Not(n):
+def Fibo_or_Not(n):
     c = 0
     a = 1
     b = 1
@@ -15,4 +15,4 @@ def Fibo_Not(n):
             print("{} is Not Fibonacci".format(n))
 
 
-Fibo_Not(25)
+Fibo_or_Not(25)

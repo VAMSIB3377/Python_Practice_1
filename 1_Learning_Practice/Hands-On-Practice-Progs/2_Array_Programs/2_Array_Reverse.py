@@ -4,8 +4,8 @@ from numpy import array
 
 arr = array([5, 6, 8, 7, 6, 4])
 
-# a = numpy.flip(arr)
-# print(a)
+a = numpy.flip(arr)
+print(a)
 
 a = arr[::-1]
 print(a)

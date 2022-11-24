@@ -8,7 +8,7 @@
 
 print(~17)
 print(~25)
-print(~41)
+print(~4)
 print(~13)
 print("\n\n")
 
